@@ -41,7 +41,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres:///daeungram")
+    "default": env.db("DATABASE_URL", default="postgres://daeunyang:hg5742695@localhost:5434/daeunstagram")
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 
@@ -74,6 +74,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     "daeungram.users.apps.UsersAppConfig",
     # Your stuff: custom apps go here
+    "daeungram.images.apps.ImagesConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
