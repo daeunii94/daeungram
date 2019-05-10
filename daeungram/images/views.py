@@ -1,5 +1,6 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import status
 from . import models, serializers
 
 
@@ -39,7 +40,7 @@ class LikeImage(APIView):
             return Response(status=status.HTTP_404_NOT_FOUND)
 
         try:
-            preexisting_like = models.Image.objects.get(
+            preexisting_like = models.Like.objects.get(
                 creator=user,
                 image=found_image,
             )
