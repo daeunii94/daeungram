@@ -2,6 +2,15 @@ from rest_framework import serializers
 from . import models
 from daeungram.users import models as user_models
 
+class CountImageSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model=models.Image
+        fields = (
+            'file',
+            'comments_count',
+            'like_count',
+        )
 
 class FeedUserSerializer(serializers.ModelSerializer):
 
@@ -15,7 +24,7 @@ class FeedUserSerializer(serializers.ModelSerializer):
         
 class CommentSerializer(serializers.ModelSerializer):
     
-    creator = FeedUserSerializer()
+    creator = FeedUserSerializer(read_only=True)
 
     class Meta:
         model = models.Comment
@@ -23,6 +32,7 @@ class CommentSerializer(serializers.ModelSerializer):
             'id',
             'message',
             'creator',
+            
         )
 
 class LikeSerializer(serializers.ModelSerializer):

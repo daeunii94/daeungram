@@ -70,11 +70,13 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "rest_framework",
+    "taggit" # tags for photos
 ]
 LOCAL_APPS = [
     "daeungram.users.apps.UsersAppConfig",
     # Your stuff: custom apps go here
-    "daeungram.images.apps.ImagesConfig",
+    "daeungram.images.apps.ImagesConfig", #images app
+    "daeungram.notifications.apps.NotificationsConfig", #notifications app
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -238,3 +240,5 @@ SOCIALACCOUNT_ADAPTER = "daeungram.users.adapters.SocialAccountAdapter"
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+TAGGIT_CASE_INSESITIVE = True
