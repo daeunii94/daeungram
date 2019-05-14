@@ -20,7 +20,8 @@ urlpatterns = [
     # Your stuff: custom urls includes go here
     path("images/", include("daeungram.images.urls", namespace="images")),
     path("notifications/", include("daeungram.notifications.urls", namespace="notifications")),
-    path("api-token-auth/", obtain_jwt_token),
+    path("rest-auth/", include("rest_auth.urls")),
+    path("rest-auth/registration/", include('rest_auth.registration.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
