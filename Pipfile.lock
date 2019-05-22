@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "72dba23c5f110d24876156b596dbcb0c4124b390d8fac70518a0fa876e3460d0"
+            "sha256": "c369cb97d0ca45f26650eefd1c696cd073567428b0a5df1fdce2c2bb51b27190"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -246,6 +246,14 @@
             "index": "pypi",
             "version": "==0.39.1"
         },
+        "django-cors-headers": {
+            "hashes": [
+                "sha256:0ac81a9a70ba9bf5569f19693f1ce566e46cabc710cdaa053409415c690033bb",
+                "sha256:b57087e45e4418a6147b8a27ca9d19da2c16b3e4732b2372fe2d9774fc7c5bca"
+            ],
+            "index": "pypi",
+            "version": "==3.0.1"
+        },
         "django-coverage-plugin": {
             "hashes": [
                 "sha256:8810678115ea541f85f4fdfa248e2bf703f05ac6740f6dbd9860d11a9861672f"
@@ -364,11 +372,10 @@
         },
         "faker": {
             "hashes": [
-                "sha256:1da8b46b4767588a007aac546e809a9b65bdf6631817c8b6b7e8b209573e0799",
-                "sha256:64650af92d1cbba15fc607440c824e6744a95b80c7ab6769ceb7b5d99e89129b"
+                "sha256:1c0a5e7bb54d2c54569986a27124715c83899e592d8d61d4e372dbff6c699573",
+                "sha256:60477f757a80f665bbe1fb3d1cfe5d205ec7b99d5240114de7b27b4c25d236ca"
             ],
-            "markers": "python_version != '3.1.*' and python_version >= '2.6' and python_version != '3.0.*'",
-            "version": "==1.0.6"
+            "version": "==1.0.7"
         },
         "flake8": {
             "hashes": [
@@ -416,11 +423,11 @@
         },
         "isort": {
             "hashes": [
-                "sha256:49293e2ff590cc8d48bc1f51970548b5b102bf038439ca1af77f352164725628",
-                "sha256:ba69a4be8474be11720636bc2f0cf66f7054d417d4c1dbc1dfe504bb8e739541"
+                "sha256:c40744b6bc5162bbb39c1257fe298b7a393861d50978b565f3ccd9cb9de0182a",
+                "sha256:f57abacd059dc3bd666258d1efb0377510a89777fda3e3274e3c01f7c03ae22d"
             ],
-            "markers": "python_version >= '2.7' and python_version != '3.3.*' and python_version != '3.1.*' and python_version != '3.0.*' and python_version != '3.2.*'",
-            "version": "==4.3.19"
+            "markers": "python_version != '3.2.*' and python_version != '3.1.*' and python_version != '3.0.*' and python_version >= '2.7' and python_version != '3.3.*'",
+            "version": "==4.3.20"
         },
         "itypes": {
             "hashes": [
